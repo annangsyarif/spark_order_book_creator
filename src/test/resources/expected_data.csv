@@ -1,0 +1,4 @@
+price,symbol,amount,total,side,cum_sum
+33990.0,"BTC-USDT",0.5,16995.0,"BUY_1",16995.0
+34010.0,"BTC-USDT",1.0,34010.0,"SELL_1",34010.0
+34050.0,"BTC-USDT",0.25,8512.5,"SELL_2",42522.5
