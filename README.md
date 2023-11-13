@@ -23,17 +23,26 @@ SBT : 1.9.7
     ``` bash
     $ sbt assembly
     ```
-3. submit jar file to spark master
-    ``` bash
-    spark-submit
-        --class org.anang.assessment.OrderBookCreator
-        --master spark://localhost:7078
-        --executor-memory 1g
-        --total-executor-cores 2
-        --conf spark.ui.reverseProxy=true
-        --conf spark.ui.reverseProxyUrl=http://localhost:8080
-        target/scala-2.12/OrderBookCreator-assembly-0.1.0.jar
-    ```
+3. submit jar file to spark master <br>
+    - default command
+        ``` bash
+        spark-submit
+            --class org.anang.assessment.OrderBookCreator
+            --master spark://localhost:7078
+            target/scala-2.12/OrderBookCreator-assembly-0.1.0.jar
+        ```
+    or
+    - custom command
+        ``` bash
+        spark-submit
+            --class org.anang.assessment.OrderBookCreator
+            --master spark://localhost:7078
+            --executor-memory 1g
+            --total-executor-cores 2
+            --conf spark.ui.reverseProxy=true
+            --conf spark.ui.reverseProxyUrl=http://localhost:8080
+            target/scala-2.12/OrderBookCreator-assembly-0.1.0.jar
+        ```
 
 It will generate order book every 1 second like this example:
 ![](https://github.com/annangsyarif/spark_sde_assessment/blob/main/output-example/picture_1.png)
