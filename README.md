@@ -36,3 +36,5 @@ SBT : 1.9.7
     ```
 
 It will generate order book every 1 second like this example:
+![](https://github.com/annangsyarif/spark_sde_assessment/blob/main/output-example/picture_1.png)
+![](https://github.com/annangsyarif/spark_sde_assessment/blob/main/output-example/picture_2.png)
