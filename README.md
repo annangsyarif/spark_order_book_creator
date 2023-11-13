@@ -45,7 +45,7 @@ SBT : 1.9.7
         ```
 
 It will generate order book every 1 second like this example: <br>
-![JSON FILE](https://github.com/annangsyarif/spark_order_book_creator/blob/main/output-example/example.json) <br>
+[JSON FILE](https://github.com/annangsyarif/spark_order_book_creator/blob/main/output-example/example.json) <br>
 or
 ![](https://github.com/annangsyarif/spark_order_book_creator/blob/main/output-example/picture_1.png)
 ![](https://github.com/annangsyarif/spark_order_book_creator/blob/main/output-example/picture_2.png)
