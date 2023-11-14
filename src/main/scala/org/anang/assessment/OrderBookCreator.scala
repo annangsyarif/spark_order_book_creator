@@ -75,14 +75,14 @@ object OrderBookCreator {
 
           // transformation
           val summaryDF = DataTransformation.processData(raw_df)
-          // summaryDF.show()
-         val jsonArrayString = DataTransformation.dfToJson(summaryDF)
 
-         // send to kafka
-         kafkaFunction.sendToKafka(
-           kafka_producer,
-           config_file.getString("kafka.order-book-topic"),
-           jsonArrayString
+          val jsonArrayString = DataTransformation.dfToJson(summaryDF)
+  
+          // send to kafka
+          kafkaFunction.sendToKafka(
+             kafka_producer,
+             config_file.getString("kafka.order-book-topic"),
+             jsonArrayString
          )
         }
       }
