@@ -1,5 +1,36 @@
 # Spark Order Book Creator
 
+## Input Examples
+``` json
+{
+    "order_id":0,
+    "symbol":"BTC-USDT",
+    "order_side":"SELL",
+    "size":0.75,
+    "price":34010.0,
+    "status":"OPEN",
+    "created_at":1693973108
+}
+{
+    "order_id":0,
+    "symbol":null,
+    "order_side":null,
+    "size":null,
+    "price":null,
+    "status":"CLOSED",
+    "created_at":1693979408
+}
+{
+    "order_id":1,
+    "symbol":"BTC-USDT",
+    "order_side":"SELL",
+    "size":0.96,
+    "price":34050.0,
+    "status":"OPEN",
+    "created_at":1693973208
+}
+```
+
 ## Tested On
 ```
 Spark : 3.5.0
